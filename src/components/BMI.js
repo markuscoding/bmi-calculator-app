@@ -51,7 +51,7 @@ const BMI = () => {
     // GLOBAL CONTAINER
     <div className="flex items-center justify-center min-h-screen bg-[#0a192f]">
       {/* CARD CONTAINER */}
-      <div className="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
+      <div className="relative flex flex-col m-6 space-y-10 overflow-hidden bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
         {/* LEFT SIDE */}
         <div className="p-6 md:p-20">
           <h1 className="mb-5 text-4xl font-bold">BMI Calculator</h1>
@@ -81,7 +81,7 @@ const BMI = () => {
           </form>
         </div>
         {/* RIGHT SIDE */}
-        <div className="p-6 md:p-20 border border-l-gray-300">
+        <div className="p-6 md:p-20 border border-l-gray-300 ">
           <div className="text-center  font-bold">
             <h2 className="text-2xl mb-2">Your Bmi is {bmi}</h2>
             <p>{message}</p>
